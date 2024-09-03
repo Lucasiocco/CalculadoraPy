@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Esta es una calculadora basica</h1>
+    <div class="calculator">
+        <input type="text" id="display" disabled />
+        <div class="buttons">
+            <div class="numbers">
+                <button class="btn number" onclick="appendToDisplay('7')">7</button>
+                <button class="btn number" onclick="appendToDisplay('8')">8</button>
+                <button class="btn number" onclick="appendToDisplay('9')">9</button>
+
+                <button class="btn number" onclick="appendToDisplay('4')">4</button>
+                <button class="btn number" onclick="appendToDisplay('5')">5</button>
+                <button class="btn number" onclick="appendToDisplay('6')">6</button>
+
+                <button class="btn number" onclick="appendToDisplay('1')">1</button>
+                <button class="btn number" onclick="appendToDisplay('2')">2</button>
+                <button class="btn number" onclick="appendToDisplay('3')">3</button>
+
+                <button class="btn number" onclick="appendToDisplay('0')">0</button>
+                <button class="btn number" onclick="appendToDisplay('.')">.</button>
+            </div>
+
+            <div class="functions">
+                <button class="btn function" onclick="clearDisplay()">C</button>
+                <button class="btn function" onclick="appendToDisplay('/')">/</button>
+                <button class="btn function" onclick="appendToDisplay('*')">*</button>
+                <button class="btn function" onclick="appendToDisplay('-')">-</button>
+                <button class="btn function" onclick="appendToDisplay('+')">+</button>
+                <button class="btn function" onclick="calculate()">=</button>
+                <button class="btn function" onclick="appendToDisplay('**')">^</button>
+                <button class="btn function" onclick="appendToDisplay('sqrt(')">√</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
