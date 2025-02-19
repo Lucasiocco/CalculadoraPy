@@ -20,6 +20,18 @@ function calculate() {
     });
 }
 
+function appendSqrt() {
+    const display = document.getElementById("display");
+    const currentValue = display.value;
+    
+    // Si ya hay un valor, envolver ese valor en sqrt()
+    if (currentValue) {
+        display.value = `sqrt(${currentValue})`;
+    } else {
+        display.value = "sqrt(";
+    }
+}
+
 function clearDisplay() {
     document.getElementById("display").value = "";
 }

@@ -37,11 +37,38 @@
                 <button class="btn function" onclick="appendToDisplay('+')">+</button>
                 <button class="btn function" onclick="calculate()">=</button>
                 <button class="btn function" onclick="appendToDisplay('**')">^</button>
-                <button class="btn function" onclick="appendToDisplay('sqrt(')">√</button>
+                <button class="btn function" onclick="appendSqrt()">√</button>
             </div>
         </div>
     </div>
+
+    <section class="anotador-section" id="anotador">
+
+        <!-- Área de texto -->
+        <div class="editor-container">
+            <textarea id="anotador-texto" 
+                    class="editor" 
+                    placeholder="Escribe tus notas aquí..."></textarea>
+        </div>
+
+        <!-- Botones de acción -->
+        <div class="button-container">
+            <button id="btnBorrar" class="btn btn-danger">
+                <i class="icon-trash"></i> Borrar
+            </button>
+        </div>
+
+    </section>
+
     </div>
     <script src="static/script.js"></script>
+    <script src="static/anotador.js"></script>
+    <script>
+        // Inicializar el anotador
+        document.addEventListener('DOMContentLoaded', function() {
+            const anotador = new Anotador('anotador');
+            anotador.cargarTexto(); // Cargar texto guardado previamente
+        });
+    </script>
 </body>
 </html>
