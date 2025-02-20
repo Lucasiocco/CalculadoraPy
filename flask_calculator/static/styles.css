@@ -14,6 +14,8 @@ body {
 }
 
 .calculator {
+    max-width: 400px;
+    width: 100%;
     background-color: #1e1e1e;
     padding: 20px;
     border-radius: 15px;
@@ -138,7 +140,15 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .main-content {
-        grid-template-columns: 1fr;
+
+.calculator {
+    width: 80%;
     }
+.tittle-calculadora {
+    width: 80%;
+    margin: 0;
+}
+.anotador-section {
+    width: 80%;
+}
 }
